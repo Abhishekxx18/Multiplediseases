@@ -15,7 +15,7 @@ import logging
 logging.basicConfig(level=logging.WARNING)
 
 # Load the dataset
-dataset = pd.read_csv("C:/Users/abhi0/Desktop/majorproject/heart/heart.csv")
+dataset = pd.read_csv("C:/Users/abhi0/Desktop/majorproject/heart.csv")
 
 # Splitting the dataset
 X = dataset.drop(columns=['target'])
@@ -85,7 +85,4 @@ if st.button('Predict'):
     else:
         st.markdown(f'<button style="background-color:green;color:white;font-size:20px;width:300px;height:60px;">{rf_result}</button>', unsafe_allow_html=True)
 
-    if logistic_pred == 1:
-        st.markdown(f'<button style="background-color:red;color:white;font-size:20px;width:300px;height:60px;">{log_result}</button>', unsafe_allow_html=True)
-    else:
-        st.markdown(f'<button style="background-color:green;color:white;font-size:20px;width:300px;height:60px;">{log_result}</button>', unsafe_allow_html=True)
+     

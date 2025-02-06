@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 # Load dataset (modify this part to use the appropriate dataset)
 @st.cache_data
 def load_data():
-    data = pd.read_csv(r'parksion\Parkinson-Disease-Detection\parkinsons.csv')  # Use raw string to fix path issue
+    data = pd.read_csv(r'parkinsons.csv')  # Use raw string to fix path issue
     data = data.select_dtypes(include=[np.number])  # Keep only numeric columns
     return data
 
